@@ -28,4 +28,8 @@ func TestHello(t *testing.T) {
 		assertThat(t, Hello("Mundo", "es_ES"), isEqualTo("Hola, Mundo"))
 	})
 
+	t.Run("Bonjour, Monde", func(t *testing.T) {
+		assertThat(t, Hello("Monde", "fr_FR"), isEqualTo("Bonjour, Monde"))
+	})
+
 }
